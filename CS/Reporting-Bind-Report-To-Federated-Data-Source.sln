@@ -1,7 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindReportToFederatedDataSource", "Reporting-Bind-Report-To-Federated-Data-Source\BindReportToFederatedDataSource.csproj", "{B889FF52-7E07-455A-B924-6933DAC847B1}"
 EndProject
@@ -15,11 +15,11 @@ Global
 		{B889FF52-7E07-455A-B924-6933DAC847B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B889FF52-7E07-455A-B924-6933DAC847B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B889FF52-7E07-455A-B924-6933DAC847B1}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+		EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AEC6803B-E7AC-49F0-AFE6-12292461E1A2}
+		SolutionGuid = {12846DE4-17D6-49FC-A3ED-728033CA90B6}
 	EndGlobalSection
 EndGlobal
