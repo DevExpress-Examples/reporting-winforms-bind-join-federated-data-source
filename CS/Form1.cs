@@ -69,7 +69,8 @@ namespace BindReportToFederatedDataSource {
 			return report;
 		}
 		static SqlDataSource CreateSqlDataSource() {
-			var connectionParameters = new SQLiteConnectionParameters("Data/nwind.db", null); var sqlDataSource = new SqlDataSource(connectionParameters) { Name = "Sql_Categories" };
+			var connectionParameters = new SQLiteConnectionParameters("Data/nwind.db", null); 
+			var sqlDataSource = new SqlDataSource(connectionParameters) { Name = "Sql_Categories" };
 			var categoriesQuery = SelectQueryFluentBuilder.AddTable("Categories").SelectAllColumnsFromTable().Build("Categories");
 			sqlDataSource.Queries.Add(categoriesQuery);
 			sqlDataSource.RebuildResultSchema();
