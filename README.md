@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 <!-- default badges list -->
-# Reporting for WinForms - Bind Report to Federated Data Source
+# Reporting for WinForms - Bind Report to Join-based Federated Data Source
 
 This example demonstrates how to create a federated data source that joins data from multiple data sources into a single query. 
 
