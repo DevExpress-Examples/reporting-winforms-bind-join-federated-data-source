@@ -1,13 +1,21 @@
 using System;
 using System.Windows.Forms;
+#region usings_sql
 using DevExpress.DataAccess.ConnectionParameters;
 using DevExpress.DataAccess.Sql;
+#endregion
+#region using_excel
 using DevExpress.DataAccess.Excel;
+#endregion
+#region using_datafederation
 using DevExpress.DataAccess.DataFederation;
+#endregion
+#region usings_report
 using System.ComponentModel;
 using System.Drawing;
 using DevExpress.XtraReports.UI;
 using System.IO;
+#endregion
 
 namespace BindReportToFederatedDataSource {
 	public partial class Form1 : Form {
@@ -16,9 +24,12 @@ namespace BindReportToFederatedDataSource {
 		}
 
 		void Button1_Click(object sender, EventArgs e) {
+			#region ShowDesigner
 			ReportDesignTool designTool = new ReportDesignTool(CreateReport());
 			designTool.ShowRibbonDesignerDialog();
+			#endregion
 		}
+		#region CreateFederationDataSource
 		static FederationDataSource CreateFederationDataSource(SqlDataSource sql, ExcelDataSource excel) {
 			// Create a federated query's SQL and Excel sources.
 			Source sqlSource = new Source(sql.Name, sql, "Categories");
@@ -43,6 +54,8 @@ namespace BindReportToFederatedDataSource {
 
 			return federationDataSource;
 		}
+		#endregion
+		#region CreateReport
 		public static XtraReport CreateReport() {
 			// Create a new report.
 			var report = new XtraReport();
@@ -68,6 +81,8 @@ namespace BindReportToFederatedDataSource {
 
 			return report;
 		}
+		#endregion
+		#region CreateSqlDataSource
 		static SqlDataSource CreateSqlDataSource() {
 			var connectionParameters = new SQLiteConnectionParameters("Data/nwind.db", null); 
 			var sqlDataSource = new SqlDataSource(connectionParameters) { Name = "Sql_Categories" };
@@ -76,6 +91,8 @@ namespace BindReportToFederatedDataSource {
 			sqlDataSource.RebuildResultSchema();
 			return sqlDataSource;
 		}
+		#endregion
+		#region CreateExcelDataSource
 		static ExcelDataSource CreateExcelDataSource() {
 			var excelDataSource = new ExcelDataSource() { Name = "Excel_Products" };
 			excelDataSource.FileName = Path.Combine(Path.GetDirectoryName(typeof(Form1).Assembly.Location), "Data/Products.xlsx");
@@ -85,5 +102,6 @@ namespace BindReportToFederatedDataSource {
 			excelDataSource.RebuildResultSchema();
 			return excelDataSource;
 		}
+		#endregion
 	}
 }
