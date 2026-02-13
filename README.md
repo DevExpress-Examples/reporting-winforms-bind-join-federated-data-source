@@ -10,7 +10,7 @@ This example demonstrates how to create a federated data source that joins data 
 
 See the [Bind a Report to a Federated Data Source](https://docs.devexpress.com/XtraReports/400922) documentation topic for more information.
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-bind-join-federated-data-source&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-bind-join-federated-data-source&~~~was_helpful=no)
 
